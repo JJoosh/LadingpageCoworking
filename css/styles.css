@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
+  background-color: white;
 }
 
 .header {
@@ -114,7 +115,6 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  border: 1px solid black;
 }
 
 .location-section h2 {
@@ -134,19 +134,23 @@ body {
   display: flex;
   max-width: 100%;
   margin: auto;
-  max-height: 350px;
+  max-height: 400px;
+  
 
 }
 
 .location-card img {
   width: 50%;
   object-fit: cover;
+  height: 450px;
+
 }
 
 .location-info {
   padding: 20px;
   flex-direction: column;
   justify-content: center;
+  height: 200px;
 }
 
 .location-info h3 {
@@ -175,7 +179,76 @@ body {
 }
 
 .conoce-mas{
+  border-radius: 20px;
+  background-color: #fff;
+  color: #1e1e1e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid #006deb;
+  text-decoration: none ;
+  margin-left: -200px;
+}
 
+.cuadros{
+
+  margin-top: -100px;
+  width: 65%;
+  display: inline-block;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.cuadrosVerticales{
+  display: flex;
+  justify-content: center;
+}
+
+.cuadro1 {
+  width: 500px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  font-family: Arial, sans-serif; 
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.cuadro1 img {
+  width: 100%; 
+  border-radius: 5px";
+}
+
+.contenido h3 {
+  margin-left: 20px;
+  font-family: Poppins,sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  height: auto;
+}
+
+.contenido a{
+  margin-left: 20px;
+}
+
+.contenido p{
+  margin-left: 20px;
+  font-family: 'Work Sans',sans-serif;
+}
+
+.contenido span{
+  color: #fd6979;
+}
+
+.contenido {
+  border-radius: 5px;
+  padding: 25px; 
+  text-align: left; 
+  background-color: white;
+  height: 200px;
+}
+
+.boton {
   border-radius: 20px;
   background-color: #fff;
   background-image: none;
@@ -188,14 +261,273 @@ body {
   top: 20px;
   border: 1px solid #006deb;
   text-decoration: none ;
+  display: inline-block;
+
+
 }
 
-.cuadros{
-  border: 1px solid green;
-  margin-top: -100px;
-  width: 65%;
+.spaces-section{
+  background-color: white;
+  width: 100%;
+}
+
+.spaces-section {
+  display: flex; 
+  justify-content: center;
+  /* margin: 20px; */
+}
+
+.fondoverde{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  background-color: #eaf5f5;
+  border-radius: 10px;
+}
+
+.history-block {
+  width: 50%; 
+  margin: 10px;
+  border-radius: 8px; 
+  display: flex;
+  position: relative;
+
+}
+
+.planes{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.planesdiv{
   display: inline-block;
   text-align: center;
-  background-color: #f4f4f4;
-  border-radius: 8px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
+
+.planesdiv h2{
+  text-align: center;
+}
+
+
+.history-block hr{
+  width: 90%;
+  text-decoration: none;
+  
+}
+
+.history-block img {
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.history-content h3{
+  max-width: 350px;
+  text-align: left;
+  font-family: Poppins,sans-serif;
+  font-size: 32px;
+  margin-top: 0;
+  word-wrap: initial;
+  margin-top: 200px;
+  margin-left: 15px;
+
+}
+.history-content p{
+  text-align: left;
+  font-family: 'Work Sans',sans-serif;
+  margin-left: 15px;
+  width: 350px;
+}
+
+
+.history-content2 h3{
+  text-align: right;
+  font-family: Poppins,sans-serif;
+  font-size: 32px;
+  margin-top: 0;
+  word-wrap: initial;
+  margin-top: 200px;
+  margin-right: 15px;
+
+}
+
+
+.history-content2 p{
+  text-align: right;
+  font-family: 'Work Sans',sans-serif;
+  margin-right: 15px;
+
+
+}
+
+
+.aboutus{
+  background-color: white;
+}
+
+.aboutus h2{ 
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+  
+}
+
+.textous{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textous p{
+  font-family: 'Work Sans',sans-serif;
+}
+
+
+.plan {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.plan h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-right: 25px;
+}
+.plan .price {
+  font-size: 28px;
+  color: #007BFF;
+  margin: 10px 0;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+.plan ul li {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  color: #666;
+}
+.plan button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 100%;
+}
+.plan button:hover {
+  background: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 300px;
+}
+.footer .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .logo .flex {
+  color: #007BFF; 
+}
+.footer .logo .offices {
+  color: #ccc; 
+}
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px; 
+}
+.social a:hover {
+  color: #007BFF;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+}
+
+.contact img{
+  width: 100%;
+  max-width: 600px;
+  height: 780px;
+  margin-top: 50px;
+}
+
+.contactanos {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+  margin: 50px;
+  
+}
+
+.contactanos h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.contactanos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactanos label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.contactanos input[type="text"],
+.contactanos input[type="email"],
+.contactanos input[type="tel"],
+.contactanos select,
+.contactanos textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactanos button {
+  background-color: #ff4b6e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
