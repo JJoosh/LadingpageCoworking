@@ -10,7 +10,7 @@
                         <li><a href="#planes">Planes</a></li>
                         <li><a href="#spaces">Espacios</a></li>
                         <li><a href="#aboutus">Acerca de nosotros</a></li>
-                        <li><a href="#contact" class="contact-button">Contáctanos</a></li>
+                        <li><a id="btn" href="#contact" class="contact-button">Contáctanos</a></li>
                     </ul>
                 </div>
             </div>

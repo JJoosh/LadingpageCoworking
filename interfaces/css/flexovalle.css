@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: white;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.5s ease;
+}
+
+.header.active {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+}
+
+.header .dropdown .dropdown-content a {
+  color: black;
+}
+
+.header.active li a {
+  color: white;
+}
+
+.header.active .logo .offices {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+.logo .flex {
+  color: #006deb;
+}
+
+.logo .offices {
+  color: rgb(0, 0, 0);
+}
+
+.nav1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav1 ul li {
+  margin-left: 20px;
+  color: black;
+}
+
+.nav1 ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+#btn {
+  color: white;
+}
+.contact-button {
+  background-color: #006deb;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.location,
+.contact {
+  width: 48%;
+}
+
+.location h2 {
+  color: #333;
+  font-size: 45px;
+  font-family: Poppins,sans-serif;
+}
+.location p{
+  font-family: 'Work Sans',sans-serif;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: #eee;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact img {
+  width: 100%;
+  max-width: 600px;
+  height: 780px;
+  margin-top: 50px;
+}
+
+.contactanos {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: 50px;
+}
+
+.contactanos h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.contactanos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactanos label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.contactanos input[type="text"],
+.contactanos input[type="email"],
+.contactanos input[type="tel"],
+.contactanos select,
+.contactanos textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactanos button {
+  background-color: #ff4b6e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.info-section {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.info {
+  background-color: #f4f4f4;
+  height: 600px;
+}
+.text-content {
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 10px;
+  background-color: white;
+  width: 550px;
+  height: 300px;
+  padding-top: 80px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+}
+
+.text-content h1 {
+  font-family: Poppins, sans-serif;
+  margin-left: 50px;
+}
+.text-content p {
+  font-family: Poppins, sans-serif;
+  width: 550px;
+  margin-left: 50px;
+  margin-right: 80px;
+  line-height: 1.65;
+}
+
+.text-content span {
+  color: #006deb;
+}
+
+.carousel {
+  margin: auto;
+  position: relative;
+  margin-top: 30px;
+}
+
+.carousel img {
+  width: 500px;
+  height: 500px;
+  display: none;
+}
+
+.carousel-image.visible {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 300px;
+}
+.footer .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .logo .flex {
+  color: #007bff;
+}
+.footer .logo .offices {
+  color: #ccc;
+}
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+}
+.social a:hover {
+  color: #007bff;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}

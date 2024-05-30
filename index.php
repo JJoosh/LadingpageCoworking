@@ -19,7 +19,7 @@
             <div class="hero-content">
                 <h1>Oficinas flexibles</h1>
                 <br>
-                <a href="#" class="contact-button">Contáctanos</a>
+                <a href="#contact" class="contact-button">Contáctanos</a>
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
                     </h3>
                     <p>Av. Insurgentes Sur 886, Col. Del Valle Centro, Benito Juárez, Merida, C.P. 98453</p>
                     <br>
-                    <a class="conoce-mas" href="">Conoce más</a>
+                    <a class="conoce-mas" href="../interfaces/FlexoValle.php">Conoce más</a>
                 </div>
             </div>
             <br>
