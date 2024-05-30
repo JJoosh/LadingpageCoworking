@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecknys del Valle</title>
+  <title>Tecknys Polanco</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/flexovalle.css">
 </head>
@@ -15,17 +15,16 @@
   <div class="info">
     <div class="info-section">
       <div class="text-content">
-        <h1>Tecknys <span>del Valle</span></h1>
-        <p>Av. Insurgentes Sur 866, Col. Del Valle Centro, Benito Juárez, CDMX, C.P. 03100</p>
-        <p>Ubicado en una de las zonas más tranquilas de nuestra ciudad y alejado del caos de la zona centro, Tecknys
-          Del
-          Valle es nuestra nueva sede en un edificio LEED rodeado de parques y recintos culturales, convirtiéndolo en un
-          lugar para trabajar con tranquilidad y comodidad.</p>
+        <h1>Tecknys <span>Polanco</span></h1>
+        <p>Calz. Gral. Mariano Escobedo 438, Col. Anzures, Miguel Hidalgo, CDMX, C.P. 11590.</p>
+        <p>Ubicado en una de las zonas más céntricas de la CDMX, Tecknys Polanco está rodeado de lugares de gastronomía
+          y
+          tendencia al mismo tiempo.</p>
       </div>
       <div class="carousel">
-        <img src="../img/Del-Valle1-scaled.jpg" alt="Flexo del Valle - Image 1" class="carousel-image visible">
-        <img src="../img/Del-Valle3-scaled.jpg" alt="Flexo del Valle - Image 2" class="carousel-image">
-        <img src="../img/Del-Valle4-scaled.jpg" alt="Flexo del Valle - Image 3" class="carousel-image">
+        <img src="../img/DSC6274-min.jpg" alt="Flexo del Valle - Image 1" class="carousel-image visible">
+        <img src="../img/DSC6387-Editar-min-1.jpg" alt="Flexo del Valle - Image 2" class="carousel-image">
+        <img src="../img/DSC6422-HDR-min.jpg" alt="Flexo del Valle - Image 3" class="carousel-image">
         <button class="prev">❮</button>
         <button class="next">❯</button>
       </div>
@@ -34,11 +33,12 @@
   <div class="container">
     <div class="location">
       <h2>Ubicación</h2>
-      <p>Tecknys del Valle</p>
-      <p>Av. Insurgentes Sur 866, Col del Valle Centro, Benito Juárez, 03100 Ciudad de México, CDMX</p>
+      <p>Tecknys Polanco</p>
+      <p>
+        Calz. Gral. Mariano Escobedo 438, Anzures, Miguel Hidalgo, CDMX, C.P. 11590.</p>
       <div id="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d963475.055997949!2d-99.17420200000001!3d19.387571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff10b1ca5937%3A0xf734b8d6cbd3af86!2sFlexoffices%20Del%20Valle!5e0!3m2!1ses!2smx!4v1717047426318!5m2!1ses!2smx"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7524.989847828916!2d-99.181973!3d19.434217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8ac51538add%3A0xdf3b96c3258b9952!2sCalz.%20Gral.%20Mariano%20Escobedo%20438%2C%20Chapultepec%20Morales%2C%20Anzures%2C%20Miguel%20Hidalgo%2C%2011590%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1717080006059!5m2!1ses!2smx"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>

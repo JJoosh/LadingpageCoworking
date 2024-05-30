@@ -1,0 +1,83 @@
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #eaf5f5;
+}
+
+.contactanos {
+  width: 100%;
+  max-width: 600px; 
+  min-width: 400px; 
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: auto; 
+  display: block; 
+}
+
+.contactanos h2 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: -30px; 
+}
+
+.contactanos form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contactanos label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.contactanos input[type="text"],
+.contactanos input[type="email"],
+.contactanos input[type="password"]
+{
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactanos button {
+  background-color: #006deb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.contactanos button:hover {
+  background-color: #006deb; 
+}
+
+
+
+.logo {
+  margin: auto;
+  width: 150px; 
+  height: auto; 
+  display: inline-block;
+}
+
+.contactanos .forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline; 
+  color: black; 
+  font-size: 14px;
+}

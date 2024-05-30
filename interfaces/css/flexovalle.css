@@ -154,6 +154,7 @@ body {
 .contactanos input[type="text"],
 .contactanos input[type="email"],
 .contactanos input[type="tel"],
+.contactanos input[type="file"],
 .contactanos select,
 .contactanos textarea {
   padding: 10px;
@@ -161,6 +162,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 
 .contactanos button {
   background-color: #ff4b6e;
@@ -302,4 +304,64 @@ button.next {
   width: 100%;
   text-align: center;
   font-size: 14px;
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+}
+
+
+.contacts img{
+  width: 100%;
+  max-width: 600px;
+  height: 780px;
+  margin-top: 50px;
+}
+
+.contacts h1{
+  display: block;
+  text-align: center;
+}
+
+.txtcontacnos{
+  text-align: center;
+}
+
+.loading {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.loading::after {
+  content: ' ...';
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+  0% { content: ' ...'; }
+  33% { content: ' ..'; }
+  67% { content: ' .'; }
+  100% { content: ' ...'; }
+}
+
+
+.info-bancaria {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.info-bancaria h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.info-bancaria p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.info-bancaria strong {
+  font-weight: bold;
 }

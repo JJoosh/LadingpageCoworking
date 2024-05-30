@@ -201,22 +201,25 @@ body {
   border-radius: 8px;
 }
 
-.cuadrosVerticales{
+.cuadrosVerticales {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
+
 
 .cuadro1 {
   width: 500px; 
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-  font-family: Arial, sans-serif; 
-  margin-right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
   border-radius: 5px;
 }
 
+
 .cuadro1 img {
-  width: 100%; 
-  border-radius: 5px";
+  width: 100%;
+  border-radius: 5px; 
 }
 
 .contenido h3 {
@@ -237,33 +240,26 @@ body {
 }
 
 .contenido span{
-  color: #fd6979;
+  color: #006deb;
 }
 
 .contenido {
-  border-radius: 5px;
-  padding: 25px; 
+  padding: 25px;
   text-align: left; 
   background-color: white;
-  height: 200px;
+  border-radius: 5px;
 }
 
 .boton {
-  border-radius: 20px;
   background-color: #fff;
-  background-image: none;
   color: #1e1e1e;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  border: 1px solid #006deb;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
   position: relative;
   top: 20px;
-  border: 1px solid #006deb;
-  text-decoration: none ;
-  display: inline-block;
-
-
 }
 
 .spaces-section{
@@ -380,6 +376,14 @@ body {
   
 }
 
+iframe{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
 .textous{
   display: flex;
   align-items: center;
@@ -392,6 +396,9 @@ body {
 
 
 .plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: white;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -401,6 +408,8 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
+
+
 .plan h2 {
   text-align: center;
   color: #333;
@@ -415,12 +424,15 @@ body {
 .plan ul {
   list-style: none;
   padding: 0;
+  flex-grow: 1; 
 }
+
 .plan ul li {
   border-top: 1px solid #eee;
   padding: 10px;
   color: #666;
 }
+
 .plan button {
   background: #007BFF;
   color: white;
@@ -431,6 +443,7 @@ body {
   cursor: pointer;
   border-radius: 15px;
   width: 100%;
+  margin-top: auto; 
 }
 .plan button:hover {
   background: #0056b3;
@@ -530,4 +543,17 @@ body {
   cursor: pointer;
 }
 
-
+.loading {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.loading::after {
+  content: ' ...';
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+  0% { content: ' ...'; }
+  33% { content: ' ..'; }
+  67% { content: ' .'; }
+  100% { content: ' ...'; }
+}
