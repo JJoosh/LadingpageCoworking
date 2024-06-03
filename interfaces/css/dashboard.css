@@ -163,3 +163,7 @@ form input[type="number"] {
 .actions button:hover {
   background-color: #0056b3;
 }
+
+.CerrarSesion{
+  margin-top: 500px;
+}

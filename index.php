@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Offices</title>
+    <title>Tecknys Offices</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -31,7 +31,7 @@
                 <img src="img/Del-Valle1-scaled-1.jpg" alt="DelValle">
 
                 <div class="location-info">
-                    <h3>Flexo
+                    <h3>Tecknys
                         <span>del Valle</span>
                     </h3>
                     <p>Av. Insurgentes Sur 886, Col. Del Valle Centro, Benito Juárez, Merida, C.P. 98453</p>

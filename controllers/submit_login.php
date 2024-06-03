@@ -1,5 +1,6 @@
 <?php
 require 'conn.php';
+session_start();
 
 class Login
 {
@@ -19,6 +20,7 @@ class Login
     $result = $stmt->get_result();
 
     if ($result->num_rows === 1) {
+      $_SESSION['usuario'] = $usuario; // Guardar el usuario en la sesión
       header("Location: ../interfaces/dashboard.php");
       exit();
     } else {
@@ -31,7 +33,6 @@ class Login
 
 
 $login = new Login($con);
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $usuario = $_POST['usuario'];

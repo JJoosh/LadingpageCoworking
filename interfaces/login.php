@@ -20,7 +20,7 @@
       <input type="password" id="password" name="password" required>
 
       <button type="submit">Entrar</button>
-      <a href="ruta_recuperacion_contraseña" class="forgot-password">¿Olvidó su contraseña?</a>
+      <a href="recuperar.php" class="forgot-password">¿Olvidó su contraseña?</a>
     </form>
   </div>
   <script src="../js/fieldsempty.js"></script>

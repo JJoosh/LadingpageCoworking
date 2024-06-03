@@ -1,4 +1,5 @@
 <?php
+require '../controllers/auth.php';
 include '../controllers/conn.php'; 
 
 $sqlNuevosClientes = "SELECT COUNT(*) as count FROM Contactanos"; 
@@ -34,6 +35,7 @@ $con->close();
                 <li><a href="ventas.php"><i class="fas fa-dollar-sign"></i> Ventas</a></li>
                 <li><a href="Plan.php"><i class="fas fa-th-list"></i> Planes</a></li>
                 <li><a href="users.php"><i class="fas fa-user-cog"></i> Usuarios</a></li>
+                <li><a class="CerrarSesion" href="../controllers/logout.php"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
             </ul>
         </div>
         <div class="main-content">

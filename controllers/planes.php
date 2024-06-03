@@ -1,5 +1,4 @@
 <?php
-    // Incluir el archivo de conexión
     include 'controllers/conn.php';
 
     $query = "SELECT nombre, precio, detalles FROM Planes";

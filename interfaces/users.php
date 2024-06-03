@@ -1,5 +1,5 @@
 <?php
-include '../controllers/conn.php'; // Incluir archivo de conexión
+include '../controllers/conn.php';
 
 // Eliminar usuario
 if (isset($_POST['delete_id'])) {

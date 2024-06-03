@@ -173,7 +173,6 @@ while ($row_servicio = $result_servicios->fetch_assoc()) {
       document.getElementById('edit_comentarios').value = comentarios;
       document.getElementById('edit_archivo').value = archivo;
 
-      // Mostrar el modal
       document.getElementById('editModal').style.display = 'block';
     }
 
