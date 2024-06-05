@@ -62,7 +62,7 @@ CREATE TABLE `Contactanos` (
   `direccion` varchar(255) NOT NULL,
   `comentarios` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -71,7 +71,7 @@ CREATE TABLE `Contactanos` (
 
 LOCK TABLES `Contactanos` WRITE;
 /*!40000 ALTER TABLE `Contactanos` DISABLE KEYS */;
-INSERT INTO `Contactanos` VALUES (1,'Cetima','cetina@cetina.com','89342454234','Av. Madero 1234','Me gustaria un esapcio para poder trabajar agusto'),(2,'Joshua Aviles','ejemplo@ejemplo.com','9081234567','1226 Fraccionamiento La rosa','Me gustaria algun espacio para mi start up'),(3,'Pable Perez','ejemplo@ejemplo.com','9995673452','Av. Madero 1234','1234');
+INSERT INTO `Contactanos` VALUES (1,'Cetima','cetina@cetina.com','89342454234','Av. Madero 1234','Me gustaria un esapcio para poder trabajar agusto'),(2,'Joshua Aviles','ejemplo@ejemplo.com','9081234567','1226 Fraccionamiento La rosa','Me gustaria algun espacio para mi start up'),(3,'Pable Perez','ejemplo@ejemplo.com','9995673452','Av. Madero 1234','1234'),(4,'Angel','si@gmail.com','9982345676','si','si');
 /*!40000 ALTER TABLE `Contactanos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +88,7 @@ CREATE TABLE `Planes` (
   `precio` decimal(10,2) DEFAULT NULL,
   `detalles` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +97,7 @@ CREATE TABLE `Planes` (
 
 LOCK TABLES `Planes` WRITE;
 /*!40000 ALTER TABLE `Planes` DISABLE KEYS */;
-INSERT INTO `Planes` VALUES (1,'Startup',549.99,'Acceso 24/7, 10 horas de sala de reuniones, Internet de alta velocidad'),(2,'Premium',899.99,'Acceso 24/7, 20 horas de sala de reuniones, Locker personal, Internet de alta velocidad, Estacionamiento'),(3,'Business',1199.99,'Acceso 24/7, Acceso ilimitado a salas de reuniones, Oficina privada, Internet de 1GB de velocidad, Área de relajación, Estacionamiento');
+INSERT INTO `Planes` VALUES (1,'si',90139482.00,'Acceso 24/7, 10 horas de sala de reuniones, Internet de alta velocidad'),(2,'Premium',899.99,'Acceso 24/7, 20 horas de sala de reuniones, Locker personal, Internet de alta velocidad, Estacionamiento'),(3,'Business',1199.99,'Acceso 24/7, Acceso ilimitado a salas de reuniones, Oficina privada, Internet de 1GB de velocidad, Área de relajación, Estacionamiento');
 /*!40000 ALTER TABLE `Planes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +112,7 @@ CREATE TABLE `Servicios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +121,7 @@ CREATE TABLE `Servicios` (
 
 LOCK TABLES `Servicios` WRITE;
 /*!40000 ALTER TABLE `Servicios` DISABLE KEYS */;
-INSERT INTO `Servicios` VALUES (1,'Oficina diseñada por ti (Enterprise)'),(2,'Sala de junta y capacitación');
+INSERT INTO `Servicios` VALUES (1,'Oficina diseñada por ti (Enterprise)'),(2,'Sala de junta y capacitación'),(3,'Cuarto de estudio');
 /*!40000 ALTER TABLE `Servicios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,6 +136,9 @@ CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `user` varchar(10) NOT NULL,
   `password` varchar(24) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `reset_token` varchar(255) DEFAULT NULL,
+  `reset_token_expiry` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `user` (`user`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -147,7 +150,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','admin');
+INSERT INTO `users` VALUES (1,'admin','admin','popeyeholden3000@gmail.com','a9ebbf027c15009396711e85306ceda6d481ad449ff0709a1bc9bd27946f1e4eaeecf835162eed42fd93e256b66c91372978','2024-06-03 15:09:04');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -160,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-30 15:15:19
+-- Dump completed on 2024-06-03 14:15:41

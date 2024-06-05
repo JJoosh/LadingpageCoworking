@@ -6,7 +6,9 @@ body {
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0absolute;
   width: 100%;
   z-index: 10;
   transition: background-color 0.5s ease;
@@ -232,6 +234,8 @@ body {
 
 .contenido a{
   margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 .contenido p{
